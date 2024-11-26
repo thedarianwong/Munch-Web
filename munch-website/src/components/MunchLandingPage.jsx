@@ -156,23 +156,53 @@ const MunchLandingPage = () => {
       </section>
 
       {/* Video Demo Section */}
-      <section id="video" style={{ backgroundColor: 'rgba(247, 184, 210, 0.1)' }}>
+      <section id="video" className="bg-pink-50/10">
         <div className="max-w-7xl mx-auto px-4 py-20">
           <h2 className="text-3xl font-bold text-center mb-12">See Munch in Action</h2>
-          <div className="aspect-w-16 aspect-h-9">
-            <div className="w-full max-w-3xl mx-auto bg-white rounded-lg">
-              <iframe
-                className="w-full h-[450px] rounded-lg"
-                src="https://www.youtube.com/embed/T5LP2IfMV_8?si=KqJilNzW-h8atlHd"  
-                title="Munch App Demo"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-white rounded-lg p-4 shadow-md">
+              <h3 className="text-xl font-semibold mb-4">Munch App Demo</h3>
+              <div className="aspect-w-16 aspect-h-9">
+                <iframe
+                  className="w-full h-64 rounded-lg"
+                  src="https://www.youtube.com/embed/T5LP2IfMV_8?si=KqJilNzW-h8atlHd"
+                  title="Munch App Demo"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg p-4 shadow-md">
+              <h3 className="text-xl font-semibold mb-4">Show and Tell 1</h3>
+              <div className="aspect-w-16 aspect-h-9">
+                <iframe
+                  className="w-full h-64 rounded-lg"
+                  src="https://www.youtube.com/embed/bbyXJNIfll0?si=ZeOeQq9oCecvs6U-"
+                  title="Show and Tell 1"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg p-4 shadow-md">
+              <h3 className="text-xl font-semibold mb-4">Show and Tell 2</h3>
+              <div className="aspect-w-16 aspect-h-9">
+                <iframe
+                  className="w-full h-64 rounded-lg"
+                  src="https://www.youtube.com/embed/SzHTgh1suQA?si=M_s-g670IgWUsN7N"
+                  title="Show and Tell 2"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+     
       {/* Features Section */}
       <section id="features" className="bg-white">
         <div className="max-w-7xl mx-auto px-4 py-20">
@@ -214,17 +244,43 @@ const MunchLandingPage = () => {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all">
               <img
-                src="/munch_placeholder.png"
+                src="/munch_thread.png"
                 alt="User Flow"
                 className="w-full rounded-lg mb-4"
               />
-              <h3 className="text-xl font-semibold mb-2" style={{ color: '#6b64b8' }}>User Flow</h3>
-              <p className="text-gray-600">Intuitive design makes navigation and decision-making effortless.</p>
+              <h3 className="text-xl font-semibold mb-2" style={{ color: '#6b64b8' }}>Threaded Diagram</h3>
+              <p className="text-gray-600">Intuitive design makes our app smoother and seamless.</p>
             </div>
           </div>
         </div>
       </section>
+
+      <section id="team" className="bg-white">
+        <div className="max-w-7xl mx-auto px-4 py-20">
+          <h2 className="text-3xl font-bold text-center mb-12">Team Members</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="p-6 border rounded-lg bg-white hover:border-[#6b64b8] transition-colors">
+              <h3 className="text-xl font-semibold mb-4" style={{ color: '#6b64b8' }}>Darian Wong</h3>
+            </div>
+
+            <div className="p-6 border rounded-lg bg-white hover:border-[#6b64b8] transition-colors">
+              <h3 className="text-xl font-semibold mb-4" style={{ color: '#6b64b8' }}>Jun Pin Foo</h3>
+            </div>
+
+            <div className="p-6 border rounded-lg bg-white hover:border-[#6b64b8] transition-colors">
+              <h3 className="text-xl font-semibold mb-4" style={{ color: '#6b64b8' }}>Gabriel Cheng</h3>
+            </div>
+
+            <div className="p-6 border rounded-lg bg-white hover:border-[#6b64b8] transition-colors">
+              <h3 className="text-xl font-semibold mb-4" style={{ color: '#6b64b8' }}>Adrian Jelenici</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      
     </div>
+
+    
   );
 };
 
