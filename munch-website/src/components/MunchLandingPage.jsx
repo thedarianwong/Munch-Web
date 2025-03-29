@@ -10,11 +10,10 @@ const sections = [
 ];
 
 const heroStyle = {
-  backgroundImage: 'url(/home.jpeg)',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
-  backgroundColor: 'rgba(0, 0, 0, 0.5)', // Overlay to ensure text readability
+  backgroundColor: 'rgba(247, 184, 210, 0.35)',
   backgroundBlendMode: 'overlay'
 };
 
@@ -118,10 +117,10 @@ const MunchLandingPage = () => {
   <div className="max-w-7xl mx-auto px-4 relative z-10">
     <div className="flex flex-col md:flex-row items-center justify-between">
       <div className="md:w-1/2 mb-8 md:mb-0">
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-          Where Friends Meet to Munch
-        </h1>
-        <p className="text-xl text-gray-200 mb-8">
+      <h1 className="text-4xl md:text-6xl font-bold mb-4" style={{ color: "#6b64b8" }}>
+  Where Friends Meet to Munch
+</h1>
+        <p className="text-xl text-black mb-8">
           Discover new restaurants and make group dining decisions easier than ever.
         </p>
         <div className="grid grid-cols-2 gap-4">
@@ -205,7 +204,7 @@ const MunchLandingPage = () => {
 </section>
 
       {/* Video Demo Section */}
-      <section id="video" className="bg-pink-50/10">
+      <section id="video" style={heroStyle}>
   <div className="max-w-7xl mx-auto px-4 py-20">
     <h2 className="text-3xl font-bold text-center mb-12">See Munch in Action</h2>
     <div className="grid grid-cols-1 gap-8 max-w-3xl mx-auto">
@@ -294,7 +293,7 @@ const MunchLandingPage = () => {
 </section>
 
       {/* Diagrams Section */}
-      <section id="diagrams" style={{ backgroundColor: 'rgba(247, 184, 210, 0.1)' }}>
+      <section id="diagrams" style={heroStyle}>
         <div className="max-w-7xl mx-auto px-4 py-20">
           <h2 className="text-3xl font-bold text-center mb-12">How It Works</h2>
           <div className="grid grid-cols-1 gap-8 max-w-3xl mx-auto">
